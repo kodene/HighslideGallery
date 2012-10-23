@@ -10,9 +10,10 @@ Installation instructions are also available online:
 
  http://www.mediawiki.org/wiki/Extension:HighslideGallery
  
-Extract the archive into the extensions folder in MediaWiki which should result
-in a directory structure of extensions/HighslideGallery. This extension does not
-include Highslide JS, which can be obtained from the following website:
+Extract the HighslideGallery directory from the archive into the extensions folder
+in MediaWiki which should result in a directory structure of 
+extensions/HighslideGallery. This extension does not include Highslide JS, which 
+can be obtained from the following website:
 
  http://www.highslide.com/
  
