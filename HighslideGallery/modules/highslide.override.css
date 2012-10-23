@@ -1,0 +1,110 @@
+/*
+ * HighslideGallery extension
+ * by Brian McCloskey
+ *
+ * Overrides for highslide.css.
+ *
+ * Licensed under Creative Commons Attribution-NonCommercial license 3.0: http://creativecommons.org/licenses/by-nc/3.0/
+ *
+ */
+a.highslide-full-expand {
+	background: none;
+	display: none;
+}
+.highslide-number {
+	color: #999;
+}
+.highslide-caption {
+	color: #c2c2c2;
+}
+.highslide-dimming {
+	background-color: #35383B;
+}
+.highslide-image {
+	box-shadow: 0 0 10px 2px #000;
+}
+/* Gallery controls */
+.controls a {
+	display: block;
+	float: left;
+	height: 64px;
+	width: 64px;
+	margin: 0;
+	outline: none;
+	background: url(prevnext.png) no-repeat;
+}
+.prev a {
+	background-position: 0 -64px;
+}
+.prev a:hover {
+	background-position: 0 0;
+}
+.next a {
+	background-position: -64px -64px;
+}
+.next a:hover {
+	background-position: -64px 0;
+}
+.close a {
+	margin: 10px;
+	height: 32px;
+	width: 32px;
+	background-position: -32px -128px;
+}
+.close a:hover {
+	margin: 10px;
+	height: 32px;
+	width: 32px;
+	background-position: 0 -128px;
+}
+.highslide-thumbstrip td {
+	padding: 3px;
+}
+.highslide-thumbstrip-horizontal img {
+	height: 80px;
+	border: none !important;
+}
+.highslide-viewport .highslide-thumbstrip-horizontal .highslide-marker {
+	top: 87px;
+	border-bottom-color: #999;
+}
+.highslide-thumbstrip-horizontal .highslide-scroll-up,
+.highslide-thumbstrip-horizontal .highslide-scroll-up div,
+.highslide-thumbstrip-horizontal .highslide-scroll-down,
+.highslide-thumbstrip-horizontal .highslide-scroll-down div {
+	height: 82px;
+}
+.highslide-thumbstrip img {
+	opacity: 0.5;
+	border: 1px solid #666 !important;
+}
+.highslide-thumbstrip img:hover {
+	opacity: 1;
+	border: 1px solid #999 !important;
+}
+.highslide-thumbstrip .highslide-active-anchor img {
+	opacity: 1;
+	border: 1px solid #ccc !important;
+}
+/******************************************************************************/
+/* YouTube CSS */
+.link-youtube {
+	/* @embed */
+	background: url(youtube.png) center right no-repeat;
+	padding-right: 18px;
+}
+.you-tube .highslide-footer {
+	display: none;
+}
+.you-tube .highslide-html {
+	background-color: rgb(0,0,0);
+}
+.you-tube .highslide-html-content {
+	padding: 0;
+}
+.you-tube .highslide-header {
+	display: none;
+}
+.you-tube .highslide-move {
+	display: none;
+}

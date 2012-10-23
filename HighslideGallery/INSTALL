@@ -1,0 +1,46 @@
+== Requirements ==
+
+HighslideGallery requires the following:
+* MediaWiki 1.17+ (previous versions have not been tested)
+* Highslide JS
+
+== Installation ==
+
+Installation instructions are also available online:
+
+ http://www.mediawiki.org/wiki/Extension:HighslideGallery
+ 
+Extract the archive into the extensions folder in MediaWiki which should result
+in a directory structure of extensions/HighslideGallery. This extension does not
+include Highslide JS, which can be obtained from the following website:
+
+ http://www.highslide.com/
+ 
+Download the latest zip file containing the Highslide JS distribution. This 
+extension uses ResourceLoader to load the javascript and CSS files, so either
+the full source or the minified versions can be used. The only resources that 
+are needed are the following:
+
+* highslide/graphics (directory)
+* highslide/highslide-full.js (or) highslide-full.min.js
+* highslide/highslide.css
+
+The above resources should be copied from within the highslide/ directory, into
+the following location:
+
+ extensions/HighslideGallery/modules/
+ 
+which should result in the following:
+
+* extensions/HighslideGallery/modules/graphics/
+* extensions/HighslideGallery/modules/highslide-full.js
+* extensions/HighslideGallery/modules/highslide.css
+
+Whichever version of the Highslide JS was chosen (full source or minified), the
+file needs to be renamed to '''highslide.js''' so that the ResourceLoader can 
+load it.
+
+To enable the HighslideGallery extension, add the following line to 
+LocalSettings.php:
+
+ require_once("$IP/extensions/HighslideGallery/HighslideGallery.php");
