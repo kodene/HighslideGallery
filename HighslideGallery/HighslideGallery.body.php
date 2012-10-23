@@ -222,7 +222,7 @@ class HighslideGallery {
         }
         
         // Start building the necessary information for the "a" element.
-        $hs = "id=\"self::$hgID\" onClick=\"return hs.expand(this, {slideshowGroup:'".self::$hgID."',captionText:'".$caption."'";
+        $hs = "id=\"".self::$hgID."\" onClick=\"return hs.expand(this, {slideshowGroup:'".self::$hgID."',captionText:'".$caption."'";
         if (self::$isGallery) {
             $hs = $hs . "})\" href";
 			$s = preg_replace('/<img /', "<img id=\"wikigallery\" ", $s, 1);
