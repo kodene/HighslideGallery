@@ -10,4 +10,4 @@ every time before output.
 
 Information on syntax and how to enable galleries is available at:
 
- https://www.mediawiki.com/wiki/Extension:HighslideGallery
+ https://www.mediawiki.org/wiki/Extension:HighslideGallery
